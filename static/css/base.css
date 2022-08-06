@@ -114,7 +114,7 @@ img {
 }
 
 
-/***** Top menu *****/
+/* Navbar */
 
 .navbar {
 	background: #444;
@@ -158,10 +158,8 @@ img {
 }
 
 .navbar-brand {
-	width: 105px;
-	background: url(../img/logo.png) left center no-repeat;
 	border: 0;
-	text-indent: -99999px;
+	width: 10rem;
 }
 
 a.top-nav-link {
