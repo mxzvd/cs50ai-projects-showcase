@@ -32,4 +32,8 @@ jQuery(document).ready(function() {
 		$('nav').toggleClass('navbar-no-bg');
 		$('.top-nav-link').css('visibility', direction === "up" ? 'hidden' : 'visible');
 	});
+
+	$(window).on('wheel', function(event) {
+		$(':focus').blur();
+	});
 });
