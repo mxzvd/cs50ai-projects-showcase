@@ -26,10 +26,10 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 		scroll_to($(this), $('nav').outerHeight());
 	});
+
 	// toggle "navbar-no-bg" class
-	$('.top-content .text').waypoint(function() {
+	$('.top-content .text').waypoint(function(direction) {
 		$('nav').toggleClass('navbar-no-bg');
+		$('.top-nav-link').css('visibility', direction === "up" ? 'hidden' : 'visible');
 	});
-
-
 });
