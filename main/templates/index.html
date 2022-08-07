@@ -21,76 +21,81 @@
 {% block content %}
     <!-- Top content -->
     <div class="top-content">
-
         <div class="inner-bg">
             <div class="container">
-
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text">
-                        <h1 class="wow fadeInLeftBig">Navbar Template with Bootstrap 4</h1>
+                        <h1 id="top-content-title" class="wow fadeInLeftBig">CS50AI: Showcase of Projects</h1>
                         <div class="description wow fadeInUp">
                             <p>
-                                This is a free Navbar template made with the Bootstrap 4 framework.
-                                Check it out now. Download it, customize and use it as you like!
+                                A simple web application built with Django framework to display and demo some 
+                                of the cooler projects made as part of the CS50's Introduction to Artificial Intelligence with Python course.
                             </p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
 
-    <!-- Section 1 -->
-    <div id="1" class="section-1-container section-container">
+    <!-- Section 0 -->
+    <div id="0" class="section-0-container section-container">
         <div class="container">
             <div class="row">
-                <div class="col section-1 section-description wow fadeIn">
-                    <h2>Section 1</h2>
+                <div class="col section-0 section-description wow fadeIn">
+                    <h2>Lecture 0</h2>
                     <div class="divider-1 wow fadeInUp"><span></span></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 section-1-box wow fadeInUp">
+                <div class="col-md-6 section-0-box wow fadeInUp">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="section-1-box-icon">
-                                <i class="fas fa-magic"></i>
+                        <div class="col-md-2">
+                            <div class="section-0-box-icon">
+                                <i class="fa-solid fa-film"></i>
                             </div>
+                            <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                Src&nbsp;&nbsp;
+                                <i class="fa-solid fa-code mt-1"></i>
+                            </a>
                         </div>
-                        <div class="col-md-8">
-                            <h3>Branding</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et.</p>
+                        <div class="col-md-10">
+                            <h3>Degrees</h3>
+                            <p>The problem consists of finding the shortest path between any two actors by choosing a
+                                sequence of movies that connects them. 
+                            </p>
+                            <p>
+                                For example, the shortest path between
+                                Jennifer Lawrence and Tom Hanks is 2 movies: Jennifer Lawrence starred with Kevin Bacon in “X-Men: First Class,” 
+                                and Kevin Bacon starred with Tom Hanks in “Apollo 13.”
+                            </p>
+                            <p>
+                                The final solution is a Python script that uses Breadth First Search Algorithm to accomplish this.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 section-1-box wow fadeInDown">
+                <div class="col-md-6 section-0-box wow fadeInDown">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="section-1-box-icon">
-                                <i class="fas fa-cog"></i>
+                        <div class="col-md-2">
+                            <div class="section-0-box-icon">
+                                <img src="{% static 'main/ico/tic-tac-toe.ico' %}" style="max-width: 68%; max-height: 68%;"/>
                             </div>
+                            <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                Src&nbsp;&nbsp;
+                                <i class="fa-solid fa-code mt-1"></i>
+                            </a>
+                            <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                Demo&nbsp;&nbsp;
+                                <i class="fa-solid fa-play mt-1"></i>
+                            </a>
                         </div>
-                        <div class="col-md-8">
-                            <h3>Web design</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 section-1-box wow fadeInUp">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="section-1-box-icon">
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <h3>Social media</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et.</p>
+                        <div class="col-md-10">
+                            <h3>Tic-Tac-Toe</h3>
+                            <span>
+                                <p>An application which implements an AI with Minimax Algorithm that can optimally play a tic-tac-toe game.</p>
+                                <img src="{% static 'main/img/tic-tac-toe.png' %}" />
+                            </span>
                         </div>
                     </div>
                 </div>

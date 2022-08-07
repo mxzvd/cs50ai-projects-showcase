@@ -1,4 +1,11 @@
-/***** Top content *****/
+/* General */
+
+.btn-primary {
+	border: 0;
+	background-color: #7a65af !important;
+}
+
+/* Top content */
 
 .inner-bg {
 	padding: 210px 0;
@@ -21,15 +28,20 @@
 	opacity: 0.8;
 }
 
+#top-content-title {
+	color: #fff;
+	-webkit-text-stroke: 1px #fff;
+}
 
-/***** Section 1 *****/
 
-.section-1-box {
+/* Section 0 */
+
+.section-0-box {
 	padding-top: 30px;
 	text-align: left;
 }
 
-.section-1-box .section-1-box-icon {
+.section-0-box .section-0-box-icon {
 	width: 80px;
 	height: 80px;
 	margin: 0 auto;
@@ -49,7 +61,7 @@
 	transition: all .6s;
 }
 
-.section-1-box h3 {
+.section-0-box h3 {
 	margin-top: 0;
 	padding: 0 0 10px 0;
 }
