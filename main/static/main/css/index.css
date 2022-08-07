@@ -5,6 +5,10 @@
 	background-color: #7a65af !important;
 }
 
+.img-game {
+	filter: drop-shadow(1mm 3mm 2mm rgba(0, 0, 0, 0.428));
+}
+
 /* Top content */
 
 .inner-bg {
@@ -67,18 +71,18 @@
 }
 
 
-/***** Section 2 *****/
+/* Section 1 */
 
-.section-2-box {
+.section-1-box {
 	margin-top: 30px;
 	text-align: left;
 }
 
-.section-2-box h3 {
+.section-1-box h3 {
 	margin-top: 0;
 }
 
-.section-2-box-text .medium-paragraph {
+.section-1-box-text .medium-paragraph {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }

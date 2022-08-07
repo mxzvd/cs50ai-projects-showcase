@@ -94,7 +94,7 @@
                             <h3>Tic-Tac-Toe</h3>
                             <span>
                                 <p>An application which implements an AI with Minimax Algorithm that can optimally play a tic-tac-toe game.</p>
-                                <img src="{% static 'main/img/tic-tac-toe.png' %}" />
+                                <img class="img-game" src="{% static 'main/img/tic-tac-toe.png' %}" />
                             </span>
                         </div>
                     </div>
@@ -103,40 +103,56 @@
         </div>
     </div>
 
-    <!-- Section 2 -->
-    <div class="section-2-container section-container section-container-gray-bg">
+    <!-- Section 1 -->
+    <div id="1" class="section-1-container section-container section-container-gray-bg">
         <div class="container">
             <div class="row">
-                <div class="col section-2 section-description wow fadeIn">
+                <div class="col section-1 section-description wow fadeIn">
+                    <h2>Lecture 1</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col section-2-box wow fadeInLeft">
-                    <h3>Section 2</h3>
+                <div class="col-md-6 section-1-box wow fadeInLeft">
+                    <div>
+                        <h3 style="display: inline-block;">Minesweeper&nbsp;</h3>
+                        <a class="btn btn-primary mb-2" href="#">
+                            Src&nbsp;&nbsp;
+                            <i class="fa-solid fa-code mt-1"></i>
+                        </a>
+                        <a class="btn btn-primary mb-2" href="#">
+                            Demo&nbsp;&nbsp;
+                            <i class="fa-solid fa-play mt-1"></i>
+                        </a>
+                    </div>
                     <p class="medium-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
+                        An intelligent agent implemented with propositional logic that can solve Minesweeper games on its own.
                     </p>
+                    <img class="img-game" src="{% static 'main/img/minesweeper.png' %}" />
+                </div>
+                <div class="col-md-6 section-1-box wow fadeInLeft">
+                    <div>
+                        <h3 style="display: inline-block;">Knights and Knaves Puzzle&nbsp;</h3>
+                        <a class="btn btn-primary mb-2" href="#">
+                            Src&nbsp;&nbsp;
+                            <i class="fa-solid fa-code mt-1"></i>
+                        </a>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et.
-                        Ut wisi enim ad minim veniam, quis nostrud.
-                        Exerci tation ullamcorper suscipit <a href="#">lobortis nisl</a> ut aliquip ex ea commodo consequat.
-                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
+                        The following information is given in the this puzzle: Each character is either a knight or a knave. 
+                        A knight will always tell the truth: if knight states a sentence, then that sentence is true.
+                        Conversely, a knave will always lie: if a knave states a sentence, then that sentence is false.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et.
-                        Ut wisi enim ad minim veniam, quis nostrud.
-                        Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    <p class="medium-paragraph">
+                        Given a set of sentences spoken by each of the characters, write an app that determines, 
+                        for each character, whether that character is a knight or a knave.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Section 3 -->
-    <div class="section-3-container section-container">
+    <!-- Section 2 -->
+    <div id="2" class="section-3-container section-container">
         <div class="container">
 
             <div class="row">
