@@ -87,6 +87,10 @@ img {
 	color: #fff;
 }
 
+.section-container-image-bg {
+	padding: 80px 0;
+}
+
 .section-container-image-bg .divider-1 span {
 	border-color: #fff;
 }
@@ -108,7 +112,6 @@ img {
 .section-bottom-button {
 	padding-top: 60px;
 }
-
 
 /* Divider */
 
