@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
 	
 	// Display background images
 	$('.top-content').backstretch(staticDir + "main/img/backgrounds/1.jpg");
-	$('.section-4-container').backstretch(staticDir + "main/img/backgrounds/1.jpg");
+	$('.section-5-container').backstretch(staticDir + "main/img/backgrounds/2.jpg");
 
 	$('a.scroll-link').on('click', function(e) {
 		e.preventDefault();
