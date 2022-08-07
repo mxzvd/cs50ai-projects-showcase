@@ -11,14 +11,15 @@
 
     <link rel="shortcut icon" href="{% static 'ico/favicon.png' %}">
 
-    <!-- Libraries -->
+    <!-- Common stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
-    
-    <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Page specific stylesheets -->
+    {% spaceless %}{% block stylesheets %}{% endblock %}{% endspaceless %}
 </head>
 
 <body>
@@ -36,15 +37,8 @@
 
 			<div class="collapse navbar-collapse" id="navbarNav">
 			    <ul class="navbar-nav">
-                    <li class="nav-item mx-3 mt-2"><p>Lectures:<p></li>
-			        <li class="nav-item"><a class="nav-link scroll-link" href="#section-0">0</a></li>
-			        <li class="nav-item"><a class="nav-link scroll-link" href="#section-1">1</a></li>
-			        <li class="nav-item"><a class="nav-link scroll-link" href="#section-2">2</a></li>
-			        <li class="nav-item"><a class="nav-link scroll-link" href="#section-3">3</a></li>
-                    <li class="nav-item"><a class="nav-link scroll-link" href="#section-4">4</a></li>
-                    <li class="nav-item"><a class="nav-link scroll-link" href="#section-5">5</a></li>
-                    <li class="nav-item"><a class="nav-link scroll-link" href="#section-6">6</a></li>
-			    </ul>
+                    {% block navbarcontent %}{% endblock %}
+                </ul>
 			</div>
 
             <a class="scroll-link top-nav-link mx-2" href="#top-content">
@@ -71,8 +65,8 @@
             </div>
         </div>
     </footer>
-    
-    <!-- Javascript -->
+
+    <!-- Common javascript -->
     <script>
         var staticDir = "{% static '' %}"
     </script>
@@ -82,5 +76,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{% static 'js/base.js' %}"></script>
+
+    <!-- Page specific javascript -->
+    {% spaceless %}{% block javascript %}{% endblock %}{% endspaceless %}
 </body>
 </html>

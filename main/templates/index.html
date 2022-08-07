@@ -1,6 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}CS50AI: Projects Showcase{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+{% endblock %}
+
+{% block navbarcontent %}
+    <li class="nav-item mx-3 mt-2"><p>Lectures:<p></li>
+    <li class="nav-item"><a class="nav-link scroll-link" href="#section-0">0</a></li>
+    <li class="nav-item"><a class="nav-link scroll-link" href="#section-1">1</a></li>
+    <li class="nav-item"><a class="nav-link scroll-link" href="#section-2">2</a></li>
+    <li class="nav-item"><a class="nav-link scroll-link" href="#section-3">3</a></li>
+    <li class="nav-item"><a class="nav-link scroll-link" href="#section-4">4</a></li>
+    <li class="nav-item"><a class="nav-link scroll-link" href="#section-5">5</a></li>
+    <li class="nav-item"><a class="nav-link scroll-link" href="#section-6">6</a></li>
+{% endblock %}
 
 {% block content %}
     <!-- Top content -->
@@ -216,4 +232,8 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block javascript %}
+    <script src="{% static 'main/js/index.js' %}"></script>
 {% endblock %}
