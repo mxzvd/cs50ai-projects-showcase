@@ -39,7 +39,7 @@
     </div>
 
     <!-- Section 0 -->
-    <div id="0" class="section-0-container section-container">
+    <div class="section-0-container section-container">
         <div class="container">
             <div class="row">
                 <div class="col section-0 section-description wow fadeIn">
@@ -104,7 +104,7 @@
     </div>
 
     <!-- Section 1 -->
-    <div id="1" class="section-1-container section-container section-container-gray-bg">
+    <div class="section-1-container section-container section-container-gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col section-1 section-description wow fadeIn">
@@ -151,104 +151,203 @@
         </div>
     </div>
 
-    <!-- Section 2 -->
-    <div id="2" class="section-3-container section-container">
+    <!-- Section 2, 3, 4 -->
+    <div class="section-2-container section-3-container section-4-container  section-container">
         <div class="container">
 
             <div class="row">
-                <div class="col section-3 section-description wow fadeIn">
-                    <h2>Section 3</h2>
+                <div class="col-md-4 section-2 section-description wow fadeInUp">
+                    <h2>Lecture 2</h2>
+                    <div class="divider-1 wow fadeInUp"><span></span></div>
+                </div>
+                <div class="col-md-4 section-3 section-description wow fadeInDown">
+                    <h2>Lecture 3</h2>
+                    <div class="divider-1 wow fadeInDown"><span></span></div>
+                </div>
+                <div class="col-md-4 section-4 section-description wow fadeInUp">
+                    <h2>Lecture 4</h2>
                     <div class="divider-1 wow fadeInUp"><span></span></div>
                 </div>
             </div>
-
+    
             <div class="row">
-                <div class="col-md-6 section-3-box wow fadeInLeft">
+                <div class="col-md-4 section-3-box wow fadeInUp">
+
                     <div class="row">
                         <div class="col-md-3">
                             <div class="section-3-box-icon">
-                                <i class="fas fa-paperclip"></i>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                    <i class="fa-solid fa-code mt-1"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <h3>Ut wisi enim ad minim</h3>
+                            <h3>Page Rank</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
+                                A simple program that implements Google's PageRank algorithm in both iterative and recursive versions.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 section-3-box wow fadeInLeft">
+                <div class="col-md-4 section-3-box wow fadeInDown">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="section-3-box-icon">
-                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fa-solid fa-border-all"></i>
+                                <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                    <i class="fa-solid fa-code mt-1"></i>
+                                </a>
+                                <a class="btn btn-primary mt-2 d-flex justify-content-center" href="#">
+                                    <i class="fa-solid fa-play mt-1"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <h3>Sed do eiusmod tempor</h3>
+                            <h3>Crossword</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
+                                An application that is able to solve english Crosswords and provide multiple solutions for any given structure of a crossword.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 section-3-box wow fadeInUp">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="section-3-box-icon">
+                                <i class="fa-solid fa-shop"></i>
+                                <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                    <i class="fa-solid fa-code mt-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <h3>Shopping</h3>
+                            <p>
+                                A nearest-neighbor classifier that is able to predict whether or not the user will make a purchase given 
+                                information about his activity — how many pages they've visited, whether they're shopping on a weekend, what web browser they're using, etc.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-
+    
             <div class="row">
-                <div class="col-md-6 section-3-box wow fadeInLeft">
+                <div class="col-md-4 section-3-box wow fadeInUp">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="section-3-box-icon">
-                                <i class="fas fa-cloud"></i>
+                                <i class="fa-solid fa-dna"></i>
+                                <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                    <i class="fa-solid fa-code mt-1"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <h3>Quis nostrud exerci tat</h3>
+                            <h3>Heredity</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
+                                An agent that determines the probability of different gene inheritance in a given family, implemented with Bayesian Networks.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 section-3-box wow fadeInLeft">
+                <div class="col-md-4 wow fadeInDown">
+                    <img class="img-game" src="{% static 'main/img/crossword.png' %}" style="width: 90%;" />
+                </div>
+                <div class="col-md-4 section-3-box wow fadeInUp">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="section-3-box-icon">
-                                <i class="fab fa-google"></i>
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                    <i class="fa-solid fa-code mt-1"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <h3>Minim veniam quis nostrud</h3>
+                            <h3>Nim</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
+                                An AI agent that teaches itself to play Nim through Reinforcement Learning.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-
+    
         </div>
     </div>
 
-    <!-- Section 4 -->
-    <div class="section-4-container section-container section-container-image-bg">
+    <!-- Section 5 -->
+    <div class="section-5-container section-container section-container-image-bg">
         <div class="container">
             <div class="row">
-                <div class="col section-4 section-description wow fadeInLeftBig">
-                    <h2>Section 4</h2>
+                <div class="col section-5 section-description wow fadeInLeftBig">
+                    <h2>Lecture 5</h2>
                     <p>
                         Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
                         aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section-6-container section-container section-container-gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col section-1 section-description wow fadeIn">
+                    <h2>Lecture 6</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 section-0-box wow slideInLeft">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="section-0-box-icon">
+                                <i class="fa-solid fa-film"></i>
+                            </div>
+                            <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                Src&nbsp;&nbsp;
+                                <i class="fa-solid fa-code mt-1"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-10">
+                            <h3>Parser</h3>
+                            <p>The problem consists of finding the shortest path between any two actors by choosing a
+                                sequence of movies that connects them. 
+                            </p>
+                            <p>
+                                For example, the shortest path between
+                                Jennifer Lawrence and Tom Hanks is 2 movies: Jennifer Lawrence starred with Kevin Bacon in “X-Men: First Class,” 
+                                and Kevin Bacon starred with Tom Hanks in “Apollo 13.”
+                            </p>
+                            <p>
+                                The final solution is a Python script that uses Breadth First Search Algorithm to accomplish this.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 section-0-box wow slideInRight">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="section-0-box-icon">
+                                <img src="{% static 'main/ico/tic-tac-toe.ico' %}" style="max-width: 68%; max-height: 68%;"/>
+                            </div>
+                            <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                Src&nbsp;&nbsp;
+                                <i class="fa-solid fa-code mt-1"></i>
+                            </a>
+                            <a class="btn btn-primary mt-3 d-flex justify-content-center" href="#">
+                                Demo&nbsp;&nbsp;
+                                <i class="fa-solid fa-play mt-1"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-10">
+                            <h3>Questions</h3>
+                            <p>An application which implements an AI with Minimax Algorithm that can optimally play a tic-tac-toe game.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
