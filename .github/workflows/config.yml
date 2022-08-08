@@ -1,0 +1,25 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python_version: [3.8.2]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Django aws eb deployment
+      uses: joel-hanson/django-aws-eb-deploy@V1.1
+      with:
+        python_version: ${{ matrix.python_version }}
+        flake8: false
+        aws_access_key_id: ${{ secrets.aws_access_key_id }}
+        aws_secret_access_key: ${{ secrets.aws_secret_access_key }}
+        django_path: cs50ai-projects-showcase
+        deploy: true
+        security_check: true
