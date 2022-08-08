@@ -5,6 +5,7 @@ env:
   EB_ENVIRONMENT_NAME: "Cs50aiprojectsshowcase-env"
   DEPLOY_PACKAGE_NAME: "django-app-${{ github.sha }}.zip"
   AWS_REGION_NAME: "eu-central-1"
+  DEPLOY_URL: "Cs50aiprojectsshowcase-env.eba-t6jndaja.eu-central-1.elasticbeanstalk.com"
 
 on:
   push:
@@ -33,6 +34,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
+    environment: 
+      name: production
+      url: ${{ env.DEPLOY_URL }}
     steps:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
