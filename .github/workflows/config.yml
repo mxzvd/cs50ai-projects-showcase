@@ -62,7 +62,7 @@ jobs:
         with:
           token: '${{ github.token }}'
           environment-url: ${{ env.DEPLOY_URL }}
-          environment: production
+          environment: View-Deployment
       
       - name: Update deployment status (success)
         if: success()
